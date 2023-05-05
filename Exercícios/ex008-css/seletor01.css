@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, #88e4ca, #41e9b9);
+    font-family: monospace;
+}
+
+#principal {
+    text-align: center;
+    text-decoration: underline;
+    color:  #43DFA3;
+    background-color: #105C46;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: left;
+    color: #105C46;
+    font-size: 25px;
+}
+
+h2 {
+    color: #1DA881;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.básico {  
+    font-size: 16px;
+    color: rgb(0, 97, 0);
+    
+}
+
+.intermediário {
+    font-size: 18px;
+    color: rgb(194, 194, 8);
+}
+
+.avançado {
+    font-size: 20px;
+    color: rgb(180, 1, 1);
+}
+
+.destaque {
+    background-color: blue;
+}

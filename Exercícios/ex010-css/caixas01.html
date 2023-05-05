@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: justify;
+            background-color: #54B8FF;
+        }
+
+        header{
+            margin: 10px 20px;
+            padding: 10px 30px;
+            background-color: white;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        nav{
+            background-color: blue;
+            box-shadow: 4px 4px 3px black;
+        }
+        nav > a {
+            text-decoration: none;
+            margin: 10px 10px;
+            color: white;
+            padding: 10px 10px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        nav > a:active{
+            color: black;
+        }
+
+        main{
+            margin: 10px 20px;
+            padding: 10px 30px;
+            background-color: white;
+        }
+
+        footer{
+            text-align: center;
+            margin: 0px 20px;
+            padding: 4px;
+            font-size: 12px;
+            font-family: bolder; 
+            background-color: white;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--header = cabeçalho
+        main   = conteudo principal
+        footer = ?
+        nav    = colocar os links 
+    -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Ínicio</a>
+            <a href="">Promoções</a>
+            <a href="">Produtos</a>
+            <a href="">Carrinho</a>
+            <a href="">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium consequatur consequuntur omnis exercitationem. Earum porro quod quam, laudantium tempora placeat accusantium dolorem, et hic officia ea natus odio optio.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo.</p>
+    </footer>
+</body>
+</html>
