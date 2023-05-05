@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightyellow;
+        }
+        h1 {
+            text-align: center;
+            font-variant: small-caps;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 2em;
+            color: black;
+            padding: 10px 5px;
+            margin: 20px 10px;
+        }
+        p {
+            font-style: italic;
+            font-size: 1em;
+            color: lightgray;
+            padding: 10px 5px;
+            margin: 10px 5px;
+        }
+        #form {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px 5px;
+            width: 80%;
+        }
+        form h2 {
+            text-align: center;
+        }
+        form p {
+            margin: 10px 5px;
+            padding: ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página do Aluno</h1>
+    <p>Insira seus dados abaixo para se cadastrar na área do aluno:</p>
+    <div class="form">
+        <form action="cadastro.php">
+            <h2>CADASTRO</h2>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required minlength="2" placeholder="Nome..." size="10" autocomplete="name">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" required minlength="2" placeholder="Sobrenome..." size="10" autocomplete="nickname">
+            </p>
+            <p>
+                <label for="inas">Data de Nascimento: </label>
+                <input type="date" name="nas" id="inas" required>
+            </p>
+            <p>
+                <label for="ires">Nome do(a) Responsável: </label>
+                <input type="text" name="res" id="ires" required autocomplete="family-name" minlength="2" placeholder="Responsável..." size="10">
+            </p>
+            <p>
+                <label for="imed">Média: </label>
+                <input type="number" name="med" id="imed" required step="0.5" min="0" max="10" placeholder="0 a 10">
+            </p>
+            <p id="limpar">
+                <input type="reset" value="Limpar">
+            </p>
+            <p id="enviar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

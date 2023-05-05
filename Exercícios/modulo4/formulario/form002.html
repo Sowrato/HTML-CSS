@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="iusu">Usuário: </label><input type="text" name="usu" id="iusu" required minlength="5" maxlength="10" size="19" placeholder="Nome de usuário...">
+            </p>
+            <p>
+                <label for="isen">Senha: </label><input type="password" name="sen" id="isen" required placeholder="Digite a senha...">
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>
+
+<!-- 
+    REQUIRED == diz que o campop é OBRIGATÓRIO DE SER PREENCHIDO;
+
+    MINLENGH == diz que o NÚMERO MÍNIMO DE CARACTERES NECESSÁRIO;
+
+    MAXLENGH == diz que o NÚMERO MÁXIMO DE CARACTERES NECESSÁRIO;
+
+    SIZE == diz o tanto de CARACTERES QUE SERÁ MOSTRADO, se "10", MOSTRARÁ 10 CARACTERES;
+
+    PLACEHOLDER == serve para mostrar algo dentro do campo INPUT. No caso acima, mostrará "Nome de usuário..."
+
+    AUTOCOMPLETE == como o próprio nome já diz, completa automaticamente o campo referente, porém tem variantes quando colocados em usuário, senhas e outros parâmetros, prestar atenção quando for utilizar esta tag.
+-->
