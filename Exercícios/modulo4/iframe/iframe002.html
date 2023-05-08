@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iframe</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                text-align: justify;
+            }
+            h1 {
+                text-align: center;
+                padding: 10px 0px;
+                font-variant: small-caps;
+                text-decoration: underline;
+            }
+            p {
+                padding: 10px 20px;
+                line-height: 30px;
+            }
+            nav {
+                margin: 25px 5px;
+                padding-left: 10px;
+                text-align: center;
+            }
+            nav > a {
+                margin-left: 30px;
+                padding: 5px;
+                color: black;
+                background-color: lightgray;
+                box-shadow: 1px 1px 10px black;
+                border: 1px solid black;
+                border-radius: 15px;
+                text-decoration: none;
+            }
+            nav > a:hover {
+                background-color: dimgray;
+                text-decoration: underline;
+                box-shadow: 2px 2px 6px black;font-weight: bold;            
+            }
+            div {
+                text-align: center;
+                padding: 10px 20px;
+            }
+            iframe {
+                height: 700px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Teste com Iframe</h1>
+        <nav>
+            <a href="/Exercícios/desa003/projeto-cordel.html" target="frame">Cordel Moderno</a>
+            <a href="\Exercícios\projeto android\site.html" target="frame">Projeto Android</a>
+        </nav>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, error minus quia accusantium recusandae cupiditate quisquam soluta ducimus eaque? Laborum sapiente, delectus temporibus facilis aspernatur ipsam error officia voluptatem qui!Lorem</p>
+
+        <div>
+            <iframe src="<h1>O que são os Iframes?</h1>" frameborder="0" name="frame">
+                <p>Infelizmente seu navegador é uma bosta e não roda nosso lindo conteúdo!</p>
+            </iframe>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae iste ab cumque excepturi eligendi eveniet beatae, voluptate itaque tenetur ex ducimus voluptatibus veritatis ipsum! Sit voluptatem nemo ipsa eveniet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repellendus expedita inventore non quibusdam esse illo recusandae ducimus excepturi perferendis vero, vel voluptate! Molestiae quisquam quas quae repudiandae aspernatur impedit?</p>
+    </body>
+</html>
