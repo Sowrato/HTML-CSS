@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            fieldset {
+                background-color: lightgray;
+                width: 50%;
+            }
+            #sexo {
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            #esportes {
+                margin: 10px 0px 10px 10px;
+                padding: 10px;
+            }
+            .button {
+                margin-bottom: 10px;
+                margin-left: 30px;
+            }
+            .button input {
+                padding: 10px;
+                background-color: lightgray;
+                border-radius: 10px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+            .button input:hover {
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas" checked>
+                <label for="isxmas">Masculino</label><br>
+                <input type="radio" name="sexo" id="isxfem">
+                <label for="isxfem">Feminino</label>
+            </fieldset>
+            <fieldset id="esportes">
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label><br>
+                <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
+                <input type="checkbox" name="eshan" id="ieshan"><label for="ieshan">HandBall</label><br>
+                <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Volei</label><br>
+                <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+            </fieldset>
+            <p class="button">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</html>
+
+<!--
+    CHECKED == utilizar para os INPUT dos tipos CHECKBOX e RADIO, pois serve para INICIAR COM AQUELE DADO MARCADO OU ASSINALADO.
+-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iframe</title>
+        <style>
+            iframe {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iframes Perigosos</h1>
+        <p>Abaixo vai estar o quadro padrão de um iframe, normalmente, entretanto alguns sites que colocamos dentros dos nossos iframes podem querer dados de alguma forma e abaixo estará algumas das configurções para negligênciar, ou seja, bloquear esses sites de conseguirem usar o meu site para adquirir informações de quaisquer formas.
+        </p>
+
+        <iframe src="https://www.cursoemvideo.com/" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    </body>
+</html>
+
+<!--
+    USAR ESSES TERMOS ABAIXO PARA PROTEÇÃO DE ALGUNS IFRAMES COLOCADOS NO SITE
+
+    sandbox="sandbox" == isso bloqueia todas as ações possíveis dentro do site que está no IFRAME.
+    
+    referrerpolicy="no-referrer" == ajuda ainda mais na proteção do seu site quando há IFRAMES maliciosos, importante colocar junto.
+-->
