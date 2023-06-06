@@ -14,69 +14,117 @@
     --cor5: #0E5880;
 }
 
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2), var(--cor3));
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--cor3);
+    border-radius: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+html {
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color: rgb(141, 219, 250);
 }
 
 header {
-    text-align: center;
     margin-bottom: 20px;
 }
+
+header > i {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--cor5);
+}
+
+/* Aplicar JavaScript no MENU */
 
 header > menu {
     font-size: 1em;
     text-align: left;
     padding: 10px;
+    display: none;
 }
 
 header > menu > a {
     text-decoration: none;
-    color: white;
-    
+    color: var(--cor5);
+    margin-right: 20px;
 }
 
 header > h1 {
+    color: var(--cor5);
+    text-align: center;
     font-size: 2.5em;
     font-family: var(--fonte01);
     font-variant: small-caps;
     letter-spacing: 7px;
+    text-shadow: 3px 3px 4px var(--cor4);
 }
 
 header > p {
+    text-align: center;
     font-style: italic;
     font-size: 1em;
+    color: var(--cor4)
+    ;
+    font-weight: bold;
+    font-family: var(--fonte02);
 }
 
 main {
     display: block;
+    background-color: rgba(18, 126, 228, 0.603);
     margin: auto;
     width: 90vw;
     text-align: justify;
-    font-size: 1em;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+    box-shadow: 0 0 10px var(--cor5);
     font-family: var(--fonte02);
 }
 
 main > h2 {
+    color: white;
+    font-size: 1.5em;
     text-indent: 20px;
     font-family: var(--fonte01);
-    font-size: 1.2em;
     letter-spacing: 4px;
+    text-shadow: 2px 2px 4px var(--cor5);
 }
 
 main > p {
+    color: white;
+    font-size: 1.1em;
+    padding: 0 8px;
     margin: 15px 0;
     text-indent: 20px;
     line-height: 27px;
+}
+
+main > p > a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+main > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
 }
