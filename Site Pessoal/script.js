@@ -3,5 +3,5 @@ function menu() {
         itens.style.display = 'none'
     } else {
         itens.style.display = 'inline'
-    }
+    } 
 }
