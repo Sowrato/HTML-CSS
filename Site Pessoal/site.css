@@ -5,13 +5,6 @@
 :root {
     --fonte01:'Rock Salt', cursive;
     --fonte02: 'Ysabeau', sem serifa;
-
-    
-    --cor1: #69CAFF;
-    --cor2: #1CB0FF;
-    --cor3: #168CCC;
-    --cor4: #346580;
-    --cor5: #0E5880;
 }
 
 html::-webkit-scrollbar {
@@ -20,11 +13,9 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: linear-gradient(to top, var(--cor1), var(--cor2), var(--cor3));
 }
 
 html::-webkit-scrollbar-track {
-    background-color: var(--cor3);
     border-radius: 10px;
 }
 
@@ -39,7 +30,6 @@ html {
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(141, 219, 250);
 }
 
 header {
@@ -49,7 +39,6 @@ header {
 header > i {
     padding: 10px;
     cursor: pointer;
-    color: var(--cor5);
 }
 
 /* Aplicar JavaScript no MENU */
@@ -61,55 +50,46 @@ header > menu {
     display: none;
 }
 
-header > menu > a {
-    text-decoration: none;
-    color: var(--cor5);
+header > menu > i {
     margin-right: 20px;
+    color: black;
+    cursor: pointer;
 }
 
-header > h1 {
-    color: var(--cor5);
+header > #titulo > h1 {
     text-align: center;
     font-size: 2.5em;
     font-family: var(--fonte01);
     font-variant: small-caps;
     letter-spacing: 7px;
-    text-shadow: 3px 3px 4px var(--cor4);
 }
 
-header > p {
+header > #titulo > p {
     text-align: center;
     font-style: italic;
     font-size: 1em;
-    color: var(--cor4)
-    ;
     font-weight: bold;
     font-family: var(--fonte02);
 }
 
 main {
     display: block;
-    background-color: rgba(18, 126, 228, 0.603);
     margin: auto;
-    width: 90vw;
+    width: 100vw;
     text-align: justify;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--cor5);
     font-family: var(--fonte02);
 }
 
 main > h2 {
-    color: white;
     font-size: 1.5em;
     text-indent: 20px;
     font-family: var(--fonte01);
     letter-spacing: 4px;
-    text-shadow: 2px 2px 4px var(--cor5);
 }
 
 main > p {
-    color: white;
     font-size: 1.1em;
     padding: 0 8px;
     margin: 15px 0;
@@ -119,12 +99,10 @@ main > p {
 
 main > p > a {
     text-decoration: none;
-    color: white;
     font-style: italic;
     font-weight: bold;
 }
 
 main > p > a:hover {
     text-decoration: underline;
-    color: var(--cor5);
 }

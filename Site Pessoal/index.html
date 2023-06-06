@@ -16,14 +16,16 @@
 </head>
 <body>
     <header>
-        <i class="material-icons">menu</i>
-        <menu>
-            <a href="home.html"><i class="material-icons">home</i></a> 
-            <a href="noticias.html"><i class="material-icons">connect_without_contact</i></a>
-            <a href="fofocas.html"><i class="material-icons">newspaper</i></a>
+        <i class="material-icons" onclick="menu()">menu</i>
+        <menu id="itens">
+            <i class="material-icons">home</i>
+            <i class="material-icons">connect_without_contact</i>
+            <i class="material-icons">newspaper</i>
         </menu>
-        <h1>Rádio Tijuco</h1>
-        <p>Blog da Sociedade do Tijuco</p>
+        <div id="titulo">
+            <h1>Rádio Tijuco</h1>
+            <p>Blog da Sociedade do Tijuco</p>
+        </div>
     </header>
     <main>
         <p>Muitos <em>blogs</em> exitem pelo mundo no setor de fofocas e esse será mais um. Entretanto há diferenças que vocês usuários irão perceber.</p>
@@ -36,5 +38,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
